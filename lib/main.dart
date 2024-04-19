@@ -6,23 +6,13 @@ void main() {
 }
 
 class App extends StatelessWidget {
+  // key : flutter가 위젯을 빠르게 찾을 수 있게 해주는 식별자 역할(id같은)
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(
-          backgroundColor: const Color(0xFFE7626C),
-        ),
-        textTheme: const TextTheme(
-          displayLarge: TextStyle(
-            color: Color(0xFF232B55),
-          ),
-        ),
-        cardColor: const Color(0xFFF4EDDB),
-      ),
-      home: const HomeScreen(),
+    return const MaterialApp(
+      home: HomeScreen(),
     );
   }
 }
